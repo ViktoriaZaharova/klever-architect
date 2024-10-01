@@ -1,0 +1,68 @@
+header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+  padding: 22px 0;
+}
+header .container::before, header .container:after {
+  display: none;
+}
+header .logo {
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 183px;
+  width: 100%;
+}
+
+.menu-header {
+  display: flex;
+  align-items: center;
+}
+.menu-header .nav-item {
+  margin: 0 48px 0 0;
+}
+.menu-header .nav-item:last-child {
+  margin: 0;
+}
+.menu-header .nav-link {
+  padding: 0;
+  color: #fff;
+}
+.menu-header .nav-link:hover {
+  color: #ccd192;
+}
+
+.phone {
+  color: #fff;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 600;
+  font-size: 28px;
+  font-family: "Unbounded", sans-serif;
+}
+.phone span {
+  margin: 0 8px 0 0;
+}
+.phone:hover {
+  color: #ccd192;
+}
+
+.btn-burger {
+  margin: 0 0 0 48px;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}

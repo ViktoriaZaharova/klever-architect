@@ -1,0 +1,55 @@
+@import "vars"
+
+header
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 3
+  padding: 22px 0
+  .container
+    &::before, &:after
+      display: none
+  .logo
+    margin: 0 auto
+
+.logo
+  @include d-flex
+  max-width: 183px
+  width: 100%
+
+.menu-header
+  display: flex
+  align-items: center
+  .nav-item
+    margin: 0 48px 0 0
+    &:last-child
+      margin: 0
+  .nav-link
+    padding: 0
+    color: $white
+    &:hover
+      color: $accent      
+
+.phone
+  color: #fff
+  width: fit-content
+  font-weight: 600
+  font-size: 28px
+  font-family: $title-font
+  span
+    margin: 0 8px 0 0
+  &:hover
+    color: $accent  
+
+.btn-burger
+  margin: 0 0 0 48px
+  cursor: pointer
+
+
+.mobile-menu
+  position: absolute
+  right: 0
+  top: 0
+  width: 100%
+  z-index: 10
