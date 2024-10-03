@@ -25,6 +25,54 @@
 
 <body>
 
+  <div class="mobile-menu">
+    <div class="mobile-menu__head">
+      <a href="index.html" class="logo"><img src="img/logo-footer.svg" alt=""></a>
+      <a href="#" class="btn-close mobile-menu__close"><svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg></a>
+    </div>
+    <div class="mobile-menu__body">
+      <ul class="mobile-menu-list my-ul">
+        <li class="mobile-menu-list__item"><a href="#team" class="mobile-menu-list__link go_to">
+            <span>Команда</span>
+            <svg class="svg-icon svg-icon-arrow">
+              <use xlink:href="img/sprite.svg#arrow-menu"></use>
+            </svg>
+          </a></li>
+          <li class="mobile-menu-list__item"><a href="#projects" class="mobile-menu-list__link go_to">
+            <span>Проекты</span>
+            <svg class="svg-icon svg-icon-arrow">
+              <use xlink:href="img/sprite.svg#arrow-menu"></use>
+            </svg>
+          </a></li>
+          <li class="mobile-menu-list__item"><a href="#contacts" class="mobile-menu-list__link go_to">
+            <span>Контакты</span>
+            <svg class="svg-icon svg-icon-arrow">
+              <use xlink:href="img/sprite.svg#arrow-menu"></use>
+            </svg>
+          </a></li>
+      </ul>
+      <div class="footer-box footer-box-contacts">
+        <ul class="list-social my-ul">
+          <li><a href="#" target="_blank" class="list-social__link"><svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#tg"></use>
+              </svg></a></li>
+          <li><a href="#" target="_blank" class="list-social__link fill-none"><svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#vk"></use>
+              </svg></a></li>
+          <li><a href="#" target="_blank" class="list-social__link fill-none"><svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#whatsapp"></use>
+              </svg></a></li>
+        </ul>
+        <a href="tel:+78412505105" class="phone">
+          <span class="color-accent">8-(8412)-</span>505-105
+        </a>
+        <a href="mailto:info@kleverdg.ru" class="mail link">info@kleverdg.ru</a>
+        <div class="address">г. Пенза, Калинина 80Б, 1 этаж</div>
+      </div>
+    </div>
+  </div>
   <header>
     <div class="container">
       <div class="row">
@@ -37,7 +85,7 @@
             </ul>
           </nav>
 
-          <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+          <a href="index.html" class="logo"><img src="img/logo-footer.svg" alt=""></a>
           <a href="tel:88008888888" class="phone h2"><span class="color-accent">8-800</span>888-88-88</a>
 
           <a href="#" class="btn-burger"><svg class="svg-icon">
@@ -49,13 +97,21 @@
   </header>
 
   <main class="home section-hidden">
-    <div class="container container-decor">
-      <div class="row">
-        <div class="col-12">
-          <h1><span class="color-accent">студия</span>
-            архитектуры и дизайна</h1>
+    <div class="home-content">
+      <div class="container container-decor">
+        <div class="row">
+          <div class="col-12">
+            <h1><span class="color-accent">студия</span>
+              архитектуры и дизайна</h1>
+          </div>
+        </div>
+      </div>
+    </div>
 
-          <nav class="nav nav-menu content-decor-line">
+    <nav class="nav nav-menu content-decor-line">
+      <div class="container container-decor">
+        <div class="row">
+          <div class="col-12">
             <ul class="menu my-ul">
               <li class="nav-item">
                 <div class="nav-item__box">
@@ -69,7 +125,7 @@
                     <div class="box-text">
                       <p>Творческий и многогранный процесс, который сочетает в себе искусство, науку и технологии</p>
                     </div>
-                    <a href="#architect" class="link color-accent text-decoration go_to">Подробнее</a>
+                    <a href="#architectural" class="link color-accent text-decoration go_to">Подробнее</a>
                   </div>
                 </div>
               </li>
@@ -84,7 +140,7 @@
                     <div class="box-text">
                       <p>Творческий и многогранный процесс, который сочетает в себе искусство, науку и технологии</p>
                     </div>
-                    <a href="#architect" class="link color-accent text-decoration go_to">Подробнее</a>
+                    <a href="#design" class="link color-accent text-decoration go_to">Подробнее</a>
                   </div>
                 </div>
               </li>
@@ -99,7 +155,7 @@
                     <div class="box-text">
                       <p>Творческий и многогранный процесс, который сочетает в себе искусство, науку и технологии</p>
                     </div>
-                    <a href="#architect" class="link color-accent text-decoration go_to">Подробнее</a>
+                    <a href="#construction" class="link color-accent text-decoration go_to">Подробнее</a>
                   </div>
                 </div>
               </li>
@@ -114,15 +170,15 @@
                     <div class="box-text">
                       <p>Творческий и многогранный процесс, который сочетает в себе искусство, науку и технологии</p>
                     </div>
-                    <a href="#architect" class="link color-accent text-decoration go_to">Подробнее</a>
+                    <a href="#repair" class="link color-accent text-decoration go_to">Подробнее</a>
                   </div>
                 </div>
               </li>
             </ul>
-          </nav>
+          </div>
         </div>
       </div>
-    </div>
+    </nav>
   </main>
 
   <section class="author team section-hidden" id="team">
@@ -166,7 +222,8 @@
                 <div class="slider-nav team-slider__nav"></div>
                 <div class="box-text">
                   <p>Профессиональная команда архитектурного бюро сочетает в себе разные компетенции, что помогает
-                    <strong>эффективно справляться со сложными задачами в области архитектуры и дизайна</strong></p>
+                    <strong>эффективно справляться со сложными задачами в области архитектуры и дизайна</strong>
+                  </p>
                 </div>
               </div>
             </div>
@@ -307,6 +364,7 @@
         <div class="col-12">
           <div class="author-wrapper content-decor-line">
             <div class="author-box-column">
+              <div class="box-sticky">
               <div class="author-box author-box-title">
                 <h2 class="title-decor">Архитектурное проектирование</h2>
               </div>
@@ -340,88 +398,139 @@
                 </li>
               </ul>
             </div>
+            </div>
 
             <div class="author-box-column">
-              <div class="tab-content">
+              <div class="tab-content accordion" id="myTabContent2">
+
                 <div class="tab-pane fade show active" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab">
-                  <div class="author-box">
-                    <div class="box-text">
-                      <p>Архитектурное проектирование частных домов — это творческий и многогранный процесс. В работе мы
-                        придерживаемся строгих принципов, которые позволяют нам делать качественный и быстрый результат.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="author-box repair-box">
-                    <div class="repair-box__img"><img src="img/architectural-img1.jpg" alt=""></div>
-                    <div class="repair-box__text">
-                      <h3>Понимаем потребности клиента</h3>
-                      <div class="box-text">
-                        <p>На начальном этапе важно провести детальное интервью с заказчиком, чтобы понять желания,
-                          стиль жизни и предпочтения</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="author-box repair-box">
-                    <div class="repair-box__img"><img src="img/architectural-img2.jpg" alt=""></div>
-                    <div class="repair-box__text">
-                      <h3>Детально
-                        изучаем участок</h3>
-                      <div class="box-text">
-                        <p>Важно учитывать его размеры, формы, рельеф, окружающую природу, климатические условия и
-                          инфраструктуру</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="author-box repair-box">
-                    <div class="repair-box__img"><img src="img/architectural-img3.jpg" alt=""></div>
-                    <div class="repair-box__text">
-                      <h3>Концептуальное проектирование</h3>
-                      <div class="box-text">
-                        <p>На этом этапе создается
-                          3D-визуализация, которая помогает клиенту лучше представить конечный результат</p>
-                      </div>
-                    </div>
+                  <div class="accordion-header" id="heading4">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4"
+                      aria-expanded="true" aria-controls="collapse4"><span>Частные
+                        дома</span>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </button>
                   </div>
 
-                  <div class="author-box repair-box">
-                    <div class="repair-box__img"><img src="img/architectural-img4.jpg" alt=""></div>
-                    <div class="repair-box__text">
-                      <h3>Техническое проектирование</h3>
-                      <div class="box-text">
-                        <p>На этом этапе также учитываются все требования и строительные нормативы</p>
+                  <div id="collapse4" class="accordion-collapse collapse show" aria-labelledby="heading4"
+                    data-bs-parent="#myTabContent2">
+                    <div class="accordion-body">
+                      <div class="author-box">
+                        <div class="box-text">
+                          <p>Архитектурное проектирование частных домов — это творческий и многогранный процесс. В
+                            работе мы
+                            придерживаемся строгих принципов, которые позволяют нам делать качественный и быстрый
+                            результат.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="author-box repair-box">
+                        <div class="repair-box__img"><img src="img/architectural-img1.jpg" alt=""></div>
+                        <div class="repair-box__text">
+                          <h3>Понимаем потребности клиента</h3>
+                          <div class="box-text">
+                            <p>На начальном этапе важно провести детальное интервью с заказчиком, чтобы понять желания,
+                              стиль жизни и предпочтения</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="author-box repair-box">
+                        <div class="repair-box__img"><img src="img/architectural-img2.jpg" alt=""></div>
+                        <div class="repair-box__text">
+                          <h3>Детально
+                            изучаем участок</h3>
+                          <div class="box-text">
+                            <p>Важно учитывать его размеры, формы, рельеф, окружающую природу, климатические условия и
+                              инфраструктуру</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="author-box repair-box">
+                        <div class="repair-box__img"><img src="img/architectural-img3.jpg" alt=""></div>
+                        <div class="repair-box__text">
+                          <h3>Концептуальное проектирование</h3>
+                          <div class="box-text">
+                            <p>На этом этапе создается
+                              3D-визуализация, которая помогает клиенту лучше представить конечный результат</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="author-box repair-box">
+                        <div class="repair-box__img"><img src="img/architectural-img4.jpg" alt=""></div>
+                        <div class="repair-box__text">
+                          <h3>Техническое проектирование</h3>
+                          <div class="box-text">
+                            <p>На этом этапе также учитываются все требования и строительные нормативы</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="author-box repair-box">
+                        <div class="repair-box__img"><img src="img/architectural-img5.jpg" alt=""></div>
+                        <div class="repair-box__text">
+                          <h3>Выбираем материалы и технологии</h3>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="author-box repair-box">
-                    <div class="repair-box__img"><img src="img/architectural-img5.jpg" alt=""></div>
-                    <div class="repair-box__text">
-                      <h3>Выбираем материалы и технологии</h3>
-                    </div>
-                  </div>
                 </div>
+
                 <div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab">
-                  <div class="author-box">
-                    <div class="box-text">
-                      <p>Архитектурное проектирование частных домов — это творческий и многогранный процесс. В работе мы
-                        придерживаемся строгих принципов, которые позволяют нам делать качественный и быстрый результат.
-                      </p>
-                    </div>
+                  <div class="accordion-header" id="heading5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                      <span>Общественные
+                        здания</span>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </button>
                   </div>
-                  <div class="author-box repair-box">
-                    <div class="repair-box__img"><img src="img/architectural-img1.jpg" alt=""></div>
-                    <div class="repair-box__text">
-                      <h3>Понимаем потребности клиента</h3>
-                      <div class="box-text">
-                        <p>На начальном этапе важно провести детальное интервью с заказчиком, чтобы понять желания,
-                          стиль жизни и предпочтения</p>
+                  <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                    data-bs-parent="#myTabContent2">
+                    <div class="accordion-body">
+                      <div class="author-box">
+                        <div class="box-text">
+                          <p>Архитектурное проектирование частных домов — это творческий и многогранный процесс. В
+                            работе мы
+                            придерживаемся строгих принципов, которые позволяют нам делать качественный и быстрый
+                            результат.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="author-box repair-box">
+                        <div class="repair-box__img"><img src="img/architectural-img1.jpg" alt=""></div>
+                        <div class="repair-box__text">
+                          <h3>Понимаем потребности клиента</h3>
+                          <div class="box-text">
+                            <p>На начальном этапе важно провести детальное интервью с заказчиком, чтобы понять желания,
+                              стиль жизни и предпочтения</p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
+
                 <div class="tab-pane fade" id="pills-6" role="tabpanel" aria-labelledby="pills-6-tab">
-                  <div class="author-box">
-                    <div class="box-text">
-                      <p>3</p>
+                  <div class="accordion-header" id="heading6">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse6" aria-expanded="true" aria-controls="collapse6"><span>Ландшафт</span>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                    data-bs-parent="#myTabContent2">
+                    <div class="accordion-body">
+                      <div class="author-box">
+                        <div class="box-text">
+                          <p>3</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -474,31 +583,73 @@
             </div>
 
             <div class="author-box-column">
-              <div class="tab-content">
+              <div class="tab-content accordion" id="myTabContent">
                 <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
-                  <div class="author-box">
-                    <div class="box-text">
-                      <p>Дизайн частного дома — это сложный и многофакторный процесс, требующий внимательного подхода к
-                        каждому аспекту:
-                        - выбор стиля,внедрение новых технологий - он создает пространство, в котором будет приятно
-                        жить, работать и отдыхать.</p>
+                  <div class="accordion-header" id="heading1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
+                      aria-expanded="true" aria-controls="collapse1"><span>Дома</span>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1"
+                    data-bs-parent="#myTabContent">
+                    <div class="accordion-body">
+                      <div class="author-box">
+                        <div class="box-text">
+                          <p>Дизайн частного дома — это сложный и многофакторный процесс, требующий внимательного
+                            подхода к
+                            каждому аспекту:
+                            - выбор стиля,внедрение новых технологий - он создает пространство, в котором будет приятно
+                            жить, работать и отдыхать.</p>
 
-                      <p>Современные тенденции в архитектуре и дизайне позволяют нашей команде создавать уникальные,
-                        функциональные и красивые дома, отвечающие требованиям настоящего и будущее.</p>
+                          <p>Современные тенденции в архитектуре и дизайне позволяют нашей команде создавать уникальные,
+                            функциональные и красивые дома, отвечающие требованиям настоящего и будущее.</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
+
                 <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
-                  <div class="author-box">
-                    <div class="box-text">
-                      <p>2</p>
+                  <div class="accordion-header" id="heading2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2"><span>Квартиры</span>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                    data-bs-parent="#myTabContent">
+                    <div class="accordion-body">
+                      <div class="author-box">
+                        <div class="box-text">
+                          <p>2</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab">
-                  <div class="author-box">
-                    <div class="box-text">
-                      <p>3</p>
+                  <div class="accordion-header" id="heading3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3"><span>Общественные
+                        пространства</span>
+                      <svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                    data-bs-parent="#myTabContent">
+                    <div class="accordion-body">
+                      <div class="author-box">
+                        <div class="box-text">
+                          <p>3</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

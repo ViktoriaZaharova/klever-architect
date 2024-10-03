@@ -267,6 +267,8 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   height: 52px;
   min-width: 52px;
   border: 1px solid #fff;
+  border-radius: 0;
+  background: transparent;
   fill: #fff;
 }
 .btn-burger svg, .btn-close svg {
@@ -315,7 +317,6 @@ h1, .h1 {
   font-family: "Unbounded", sans-serif;
   font-weight: normal;
   line-height: 91px;
-  letter-spacing: 2%;
   margin: 0;
 }
 
@@ -350,7 +351,6 @@ h2, .h2 {
   font-family: "Unbounded", sans-serif;
   font-weight: normal;
   line-height: normal;
-  letter-spacing: 2%;
   margin: 0;
 }
 h2 sup, .h2 sup {
@@ -364,7 +364,6 @@ h3, .h3 {
   font-family: "Unbounded", sans-serif;
   font-weight: normal;
   line-height: normal;
-  letter-spacing: 2%;
   margin: 0;
 }
 
@@ -537,6 +536,85 @@ a.color-accent:hover {
   justify-content: center;
 }
 
+.accordion-header {
+  background: transparent;
+  display: none;
+}
+
+.accordion-body {
+  padding: 0;
+  width: 100%;
+}
+
+.accordion-button {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #d3d3d2;
+  border-radius: 0;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: "Unbounded", sans-serif;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px 10px 32px;
+  box-shadow: none;
+}
+.accordion-button .svg-icon {
+  width: 47px;
+  height: 54px;
+  min-width: 47px;
+  transform: rotate(45deg);
+  stroke: #21211f;
+  transition: 0.3s ease;
+  margin-left: auto;
+}
+.accordion-button:hover {
+  background: #ccd192;
+  color: #21211f;
+  box-shadow: none;
+  border-color: #d3d3d2;
+}
+.accordion-button:hover .svg-icon {
+  stroke: #21211f;
+  transform: none;
+}
+.accordion-button::after {
+  display: none;
+}
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+  background: #21211f;
+  color: #fff;
+}
+.accordion-button:not(.collapsed) .svg-icon {
+  stroke: #fff;
+  transform: rotate(-45deg);
+}
+.accordion-button:not(.collapsed):hover {
+  background: #ccd192;
+  color: #21211f;
+  box-shadow: none;
+  border-color: #d3d3d2;
+}
+.accordion-button:not(.collapsed):hover .svg-icon {
+  stroke: #21211f;
+  transform: none;
+}
+.accordion-button:not(.collapsed).active, .accordion-button:not(.collapsed):focus {
+  background: #21211f;
+  color: #fff;
+}
+.accordion-button:not(.collapsed).active .svg-icon, .accordion-button:not(.collapsed):focus .svg-icon {
+  stroke: #fff;
+  transform: none;
+}
+
+.collapse:not(.show) {
+  display: block;
+}
+
 .slick-slider {
   width: 100%;
 }
@@ -595,32 +673,9 @@ a.color-accent:hover {
   margin: 0;
 }
 
-.label-checkbox {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 14px;
-  margin: 15px 0 0;
-  line-height: 1.14;
-}
-
-.inp-check {
-  display: none;
-}
-
-.checkbox-custom {
-  margin: 0 12px 0 0;
-  position: relative;
-  border-radius: 6px;
-  background-color: #fff;
-  width: 16px;
-  height: 16px;
-  min-width: 16px;
-  cursor: pointer;
-}
-
-.inp-check:checked ~ .checkbox-custom {
-  background: #fff url("../img/check-black.svg") no-repeat center;
-  background-size: 8px;
+.box-sticky {
+  width: 100%;
+  top: 20px;
+  z-index: 2;
+  position: sticky;
 }

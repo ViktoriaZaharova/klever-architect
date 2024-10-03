@@ -5,9 +5,6 @@
   z-index: 1;
   color: #fff;
 }
-.home .container {
-  padding: 180px 24px 120px;
-}
 .home::before {
   content: "";
   position: absolute;
@@ -22,8 +19,15 @@
   background: rgba(255, 255, 255, 0.3);
 }
 
+.home-content .container {
+  padding: 180px 24px 0;
+}
+
 .nav-menu {
   width: 100%;
+}
+.nav-menu .container {
+  padding: 0 24px 120px;
 }
 
 .menu {
@@ -152,9 +156,8 @@
   font-family: "Unbounded", sans-serif;
   font-weight: 200;
   line-height: normal;
-  letter-spacing: 2%;
   text-transform: uppercase;
-  width: 140px;
+  min-width: 140px;
 }
 .repair-step .box-text p {
   margin: 0;
@@ -234,6 +237,17 @@
 .projects-slider {
   width: 100%;
   height: 404px;
+}
+.projects-slider .slick-list {
+  height: 100%;
+}
+.projects-slider .slick-track {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+}
+.projects-slider .slick-slide {
+  height: auto;
 }
 .projects-slider__img {
   width: 100%;
@@ -332,4 +346,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.architectural {
+  overflow: visible;
 }
