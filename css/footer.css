@@ -1,8 +1,125 @@
-@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap");
-@font-face {
-  font-family: "AvenirNextCyr";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot");
-  src: url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.woff") format("woff"), url("../fonts/AvenirNextCyr/AvenirNextCyr-Regular.ttf") format("truetype");
+footer {
+  background: #21211f;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+footer .phone {
+  font-size: 40px;
+  line-height: normal;
+}
+footer .phone span {
+  margin: 0;
+}
+footer .content-decor-line::before, footer .content-decor-line::after {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.footer-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.name-company {
+  margin: 24px 0 0;
+  color: rgba(255, 255, 255, 0.3);
+  max-width: 197px;
+}
+
+.mail {
+  text-decoration: underline;
+  margin: 18px 0 24px;
+  color: #fff;
+}
+
+.list-social {
+  display: flex;
+  align-items: flex-start;
+  margin: 0 0 48px;
+}
+.list-social li {
+  margin: 0 18px 0 0;
+}
+.list-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccd192;
+  width: 64px;
+  height: 64px;
+  min-width: 64px;
+  padding: 16px;
+  fill: #ccd192;
+}
+.list-social a:hover {
+  background: #ccd192;
+  fill: #21211f;
+}
+.list-social a:focus {
+  background: #d3d3d2;
+  fill: #21211f;
+}
+.list-social a.fill-none {
+  fill: none;
+  stroke: #ccd192;
+}
+.list-social a.fill-none:hover {
+  stroke: #21211f;
+  fill: none;
+}
+.list-social a.fill-none:focus {
+  stroke: #21211f;
+  fill: none;
+}
+
+.map {
+  width: 100%;
+  height: 342px;
+}
+.map iframe {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(1);
+}
+
+.footer-box {
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 64px;
+}
+.footer-box:last-child {
+  border: none;
+}
+
+.footer-box-company {
+  width: 30%;
+}
+
+.footer-box-contacts {
+  width: 37%;
+}
+
+.footer-box-map {
+  padding: 16px;
+  width: 33%;
+}
+
+.link-developer {
+  padding: 24px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  color: #F9F9F9;
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  text-align: right;
+}
+.link-developer span {
+  display: block;
+  margin: 0 0 12px;
+}
+.link-developer img {
+  max-width: 115px;
 }

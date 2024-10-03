@@ -1,13 +1,24 @@
 <svg display="none" xmlns="http://www.w3.org/2000/svg">
 
-    <symbol id="arrow-menu" viewBox="0 0 95 95">
-        <path d="M0.966992 93.8154L93.598 1.1844M93.598 1.1844H14.402M93.598 1.1844V80.3804" />
+    <symbol id="arrow-menu" viewBox="0 0 114 132">
+        <path d="M57.2822 -4.89568e-06L57.2822 131M57.2822 131L113.282 75M57.2822 131L1.28223 75" />
+    </symbol>
+
+    <symbol id="arrow-btn" viewBox="0 0 38 21">
+        <path d="M19.1374 19.6324V1.5083M19.1374 1.5083L0.864105 19.7816M19.1374 1.5083L37.4107 19.7816" />
     </symbol>
 
     <symbol id="arrow-right" viewBox="0 0 84 72">
         <path d="M1.54986e-06 36L83 36M83 36L47.5191 1M83 36L47.5191 71" />
     </symbol>
 
+    <symbol id="prev" viewBox="0 0 24 24">
+        <path d="M6.921 11.5L19 11.5L19 12.5L6.921 12.5L12.713 18.292L12 19L5 12L12 5L12.713 5.708L6.921 11.5Z" />
+    </symbol>
+
+    <symbol id="next" viewBox="0 0 24 24">
+        <path d="M17.079 12.5H5V11.5H17.079L11.287 5.708L12 5L19 12L12 19L11.287 18.292L17.079 12.5Z" />
+    </symbol>
 
     <symbol id="burger-menu" viewBox="0 0 20 14">
         <path

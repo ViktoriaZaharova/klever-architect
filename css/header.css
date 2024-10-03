@@ -6,9 +6,6 @@ header {
   z-index: 3;
   padding: 22px 0;
 }
-header .container::before, header .container:after {
-  display: none;
-}
 header .logo {
   margin: 0 auto;
 }

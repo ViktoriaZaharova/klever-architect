@@ -48,27 +48,74 @@
     </div>
   </header>
 
-  <main class="home">
-    <div class="container">
+  <main class="home section-hidden">
+    <div class="container container-decor">
       <div class="row">
         <div class="col-12">
           <h1><span class="color-accent">студия</span>
             архитектуры и дизайна</h1>
 
-          <nav class="nav nav-menu">
+          <nav class="nav nav-menu content-decor-line">
             <ul class="menu my-ul">
-              <li class="nav-item"><a href="#architect" class="nav-link go_to"><span>Архитектурное
-                    проектирование</span>
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#arrow-menu"></use>
-                  </svg></a>
-                <div class="menu-hover">
+              <li class="nav-item">
+                <div class="nav-item__box">
                   <h3>Архитектурное
                     проектирование</h3>
-                  <div class="box-text">
-                    <p>Творческий и многогранный процесс, который сочетает в себе искусство, науку и технологии</p>
+
+                  <svg class="svg-icon svg-icon-arrow">
+                    <use xlink:href="img/sprite.svg#arrow-menu"></use>
+                  </svg>
+                  <div class="menu-hover">
+                    <div class="box-text">
+                      <p>Творческий и многогранный процесс, который сочетает в себе искусство, науку и технологии</p>
+                    </div>
+                    <a href="#architect" class="link color-accent text-decoration go_to">Подробнее</a>
                   </div>
-                  <a href="#architect" class="link color-accent text-decoration go_to">Подробнее</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="nav-item__box">
+                  <h3>Дизайн</h3>
+
+                  <svg class="svg-icon svg-icon-arrow">
+                    <use xlink:href="img/sprite.svg#arrow-menu"></use>
+                  </svg>
+                  <div class="menu-hover">
+                    <div class="box-text">
+                      <p>Творческий и многогранный процесс, который сочетает в себе искусство, науку и технологии</p>
+                    </div>
+                    <a href="#architect" class="link color-accent text-decoration go_to">Подробнее</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="nav-item__box">
+                  <h3>Строительство</h3>
+
+                  <svg class="svg-icon svg-icon-arrow">
+                    <use xlink:href="img/sprite.svg#arrow-menu"></use>
+                  </svg>
+                  <div class="menu-hover">
+                    <div class="box-text">
+                      <p>Творческий и многогранный процесс, который сочетает в себе искусство, науку и технологии</p>
+                    </div>
+                    <a href="#architect" class="link color-accent text-decoration go_to">Подробнее</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="nav-item__box">
+                  <h3>Ремонт</h3>
+
+                  <svg class="svg-icon svg-icon-arrow">
+                    <use xlink:href="img/sprite.svg#arrow-menu"></use>
+                  </svg>
+                  <div class="menu-hover">
+                    <div class="box-text">
+                      <p>Творческий и многогранный процесс, который сочетает в себе искусство, науку и технологии</p>
+                    </div>
+                    <a href="#architect" class="link color-accent text-decoration go_to">Подробнее</a>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -78,44 +125,638 @@
     </div>
   </main>
 
-  <section class="">
-    <div class="container">
+  <section class="author team section-hidden" id="team">
+    <div class="container container-decor container-decor-dark">
       <div class="row">
+        <div class="col-12">
+          <div class="author-wrapper content-decor-line">
+            <div class="author-box-column w-67">
+              <div class="author-box author-box-title">
+                <h2 class="title-decor"><span class="color-accent">Индивидуальные архитектурные воплощения</span> <br>
+                  от 50 000 рублей за м<sup>2</sup></h2>
+                <div class="box-text">
+                  <p>Воплощаем любые задумки под ключ, а так же работаем поэтапно в составе команды коллег</p>
+                </div>
+              </div>
+            </div>
+            <div class="author-box-column w-33">
+              <form method="post" class="form form-callback">
+                <label>
+                  <input type="text" placeholder="Введите имя" name="name">
+                </label>
+                <label>
+                  <input type="text" placeholder="Введите телефон" name="phone" required>
+                </label>
 
+                <button type="submit" class="btn btn-white">
+                  <span>кнопка</span>
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow-btn"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="author-wrapper content-decor-line team-wrapper">
+            <div class="author-box-column w-33">
+              <div class="author-box author-box-title">
+                <div class="slider-nav team-slider__nav"></div>
+                <div class="box-text">
+                  <p>Профессиональная команда архитектурного бюро сочетает в себе разные компетенции, что помогает
+                    <strong>эффективно справляться со сложными задачами в области архитектуры и дизайна</strong></p>
+                </div>
+              </div>
+            </div>
+            <div class="author-box-column w-67">
+              <div class="team-slider">
+                <div class="slick-slide">
+                  <div class="team-card">
+                    <div class="team-card__photo"><img src="img/team-img1.jpg" alt=""></div>
+                    <div class="team-card__body">
+                      <div class="team-card__name">Иванов Иван</div>
+                      <div class="team-card__position">Главный архитектор</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slick-slide">
+                  <div class="team-card">
+                    <div class="team-card__photo"><img src="img/team-img2.jpg" alt=""></div>
+                    <div class="team-card__body">
+                      <div class="team-card__name">Петрова Екатерина</div>
+                      <div class="team-card__position">Архитектор</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slick-slide">
+                  <div class="team-card">
+                    <div class="team-card__photo"><img src="img/team-img3.jpg" alt=""></div>
+                    <div class="team-card__body">
+                      <div class="team-card__name">Сидоров Евгений</div>
+                      <div class="team-card__position">Архитектор</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="slick-slide">
+                  <div class="team-card">
+                    <div class="team-card__photo"><img src="img/team-img1.jpg" alt=""></div>
+                    <div class="team-card__body">
+                      <div class="team-card__name">Иванов Иван</div>
+                      <div class="team-card__position">Главный архитектор</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="">
-    <div class="container">
+  <section class="author projects bg-light-gray section-hidden" id="projects">
+    <div class="container container-decor container-decor-dark">
       <div class="row">
+        <div class="col-12">
+          <div class="author-wrapper content-decor-line">
+            <div class="author-box-column">
+              <div class="author-box author-box-title">
+                <h2 class="title-decor">Реализованные проекты</h2>
+              </div>
+            </div>
 
+            <div class="author-box-column projects-wrapper">
+              <div class="row">
+                <div class="col-12 col-lg-6 mb-48">
+                  <div class="projects-card">
+                    <div class="projects-slider">
+                      <div class="slick-slide">
+                        <div class="projects-slider__img"><img src="img/project-img1.jpg" alt=""></div>
+                      </div>
+                      <div class="slick-slide">
+                        <div class="projects-slider__img"><img src="img/project-img1.jpg" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="projects-card__body">
+                      <div class="projects-card__name">Проект одноэтажного дома площадью 100 м<sup>2</sup></div>
+                      <a href="#" class="link color-accent">Получить расчет</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 mb-48">
+                  <div class="projects-card">
+                    <div class="projects-slider">
+                      <div class="slick-slide">
+                        <div class="projects-slider__img"><img src="img/project-img2.jpg" alt=""></div>
+                      </div>
+                      <div class="slick-slide">
+                        <div class="projects-slider__img"><img src="img/project-img2.jpg" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="projects-card__body">
+                      <div class="projects-card__name">Проект одноэтажного дома площадью 100 м<sup>2</sup></div>
+                      <a href="#" class="link color-accent">Получить расчет</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 mb-48">
+                  <div class="projects-card">
+                    <div class="projects-slider">
+                      <div class="slick-slide">
+                        <div class="projects-slider__img"><img src="img/project-img3.jpg" alt=""></div>
+                      </div>
+                      <div class="slick-slide">
+                        <div class="projects-slider__img"><img src="img/project-img3.jpg" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="projects-card__body">
+                      <div class="projects-card__name">Проект одноэтажного дома площадью 100 м<sup>2</sup></div>
+                      <a href="#" class="link color-accent">Получить расчет</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 mb-48">
+                  <div class="projects-card">
+                    <div class="projects-slider">
+                      <div class="slick-slide">
+                        <div class="projects-slider__img"><img src="img/project-img4.jpg" alt=""></div>
+                      </div>
+                      <div class="slick-slide">
+                        <div class="projects-slider__img"><img src="img/project-img4.jpg" alt=""></div>
+                      </div>
+                    </div>
+                    <div class="projects-card__body">
+                      <div class="projects-card__name">Проект одноэтажного дома площадью 100 м<sup>2</sup></div>
+                      <a href="#" class="link color-accent">Получить расчет</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="">
-    <div class="container">
+  <section class="author architectural section-hidden" id="architectural">
+    <div class="container container-decor container-decor-dark">
       <div class="row">
+        <div class="col-12">
+          <div class="author-wrapper content-decor-line">
+            <div class="author-box-column">
+              <div class="author-box author-box-title">
+                <h2 class="title-decor">Архитектурное проектирование</h2>
+              </div>
+              <ul class="nav nav-pills nav-tabs my-ul" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-4-tab" data-bs-toggle="pill" data-bs-target="#pills-4"
+                    type="button" role="tab" aria-controls="pills-4" aria-selected="true">
+                    <span>Частные дома</span>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-5-tab" data-bs-toggle="pill" data-bs-target="#pills-5"
+                    type="button" role="tab" aria-controls="pills-5" aria-selected="false">
+                    <span>Общественные здания</span>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-6-tab" data-bs-toggle="pill" data-bs-target="#pills-6"
+                    type="button" role="tab" aria-controls="pills-6" aria-selected="false">
+                    <span>Ландшафт</span>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
 
+            <div class="author-box-column">
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="pills-4" role="tabpanel" aria-labelledby="pills-4-tab">
+                  <div class="author-box">
+                    <div class="box-text">
+                      <p>Архитектурное проектирование частных домов — это творческий и многогранный процесс. В работе мы
+                        придерживаемся строгих принципов, которые позволяют нам делать качественный и быстрый результат.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="author-box repair-box">
+                    <div class="repair-box__img"><img src="img/architectural-img1.jpg" alt=""></div>
+                    <div class="repair-box__text">
+                      <h3>Понимаем потребности клиента</h3>
+                      <div class="box-text">
+                        <p>На начальном этапе важно провести детальное интервью с заказчиком, чтобы понять желания,
+                          стиль жизни и предпочтения</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="author-box repair-box">
+                    <div class="repair-box__img"><img src="img/architectural-img2.jpg" alt=""></div>
+                    <div class="repair-box__text">
+                      <h3>Детально
+                        изучаем участок</h3>
+                      <div class="box-text">
+                        <p>Важно учитывать его размеры, формы, рельеф, окружающую природу, климатические условия и
+                          инфраструктуру</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="author-box repair-box">
+                    <div class="repair-box__img"><img src="img/architectural-img3.jpg" alt=""></div>
+                    <div class="repair-box__text">
+                      <h3>Концептуальное проектирование</h3>
+                      <div class="box-text">
+                        <p>На этом этапе создается
+                          3D-визуализация, которая помогает клиенту лучше представить конечный результат</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="author-box repair-box">
+                    <div class="repair-box__img"><img src="img/architectural-img4.jpg" alt=""></div>
+                    <div class="repair-box__text">
+                      <h3>Техническое проектирование</h3>
+                      <div class="box-text">
+                        <p>На этом этапе также учитываются все требования и строительные нормативы</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="author-box repair-box">
+                    <div class="repair-box__img"><img src="img/architectural-img5.jpg" alt=""></div>
+                    <div class="repair-box__text">
+                      <h3>Выбираем материалы и технологии</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-5" role="tabpanel" aria-labelledby="pills-5-tab">
+                  <div class="author-box">
+                    <div class="box-text">
+                      <p>Архитектурное проектирование частных домов — это творческий и многогранный процесс. В работе мы
+                        придерживаемся строгих принципов, которые позволяют нам делать качественный и быстрый результат.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="author-box repair-box">
+                    <div class="repair-box__img"><img src="img/architectural-img1.jpg" alt=""></div>
+                    <div class="repair-box__text">
+                      <h3>Понимаем потребности клиента</h3>
+                      <div class="box-text">
+                        <p>На начальном этапе важно провести детальное интервью с заказчиком, чтобы понять желания,
+                          стиль жизни и предпочтения</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-6" role="tabpanel" aria-labelledby="pills-6-tab">
+                  <div class="author-box">
+                    <div class="box-text">
+                      <p>3</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="">
-    <div class="container">
+  <section class="author design bg-light-gray section-hidden" id="design">
+    <div class="container container-decor container-decor-dark">
       <div class="row">
+        <div class="col-12">
+          <div class="author-wrapper content-decor-line">
+            <div class="author-box-column">
+              <div class="author-box author-box-title">
+                <h2 class="title-decor">Дизайн</h2>
+              </div>
+              <ul class="nav nav-pills nav-tabs my-ul" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1"
+                    type="button" role="tab" aria-controls="pills-1" aria-selected="true">
+                    <span>Дома</span>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-2-tab" data-bs-toggle="pill" data-bs-target="#pills-2"
+                    type="button" role="tab" aria-controls="pills-2" aria-selected="false">
+                    <span>Квартиры</span>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-3-tab" data-bs-toggle="pill" data-bs-target="#pills-3"
+                    type="button" role="tab" aria-controls="pills-3" aria-selected="false">
+                    <span>Общественные пространства</span>
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#arrow-right"></use>
+                    </svg>
+                  </button>
+                </li>
+              </ul>
+            </div>
 
+            <div class="author-box-column">
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab">
+                  <div class="author-box">
+                    <div class="box-text">
+                      <p>Дизайн частного дома — это сложный и многофакторный процесс, требующий внимательного подхода к
+                        каждому аспекту:
+                        - выбор стиля,внедрение новых технологий - он создает пространство, в котором будет приятно
+                        жить, работать и отдыхать.</p>
+
+                      <p>Современные тенденции в архитектуре и дизайне позволяют нашей команде создавать уникальные,
+                        функциональные и красивые дома, отвечающие требованиям настоящего и будущее.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
+                  <div class="author-box">
+                    <div class="box-text">
+                      <p>2</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-3-tab">
+                  <div class="author-box">
+                    <div class="box-text">
+                      <p>3</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <footer>
-    <div class="container">
+  <section class="author construction section-hidden" id="construction">
+    <div class="container container-decor container-decor-dark">
       <div class="row">
+        <div class="col-12">
+          <div class="author-wrapper content-decor-line">
+            <div class="author-box-column">
+              <div class="author-box author-box-title">
+                <h2 class="title-decor">Строительство</h2>
+              </div>
+            </div>
 
+            <div class="author-box-column">
+              <div class="author-box">
+                <div class="box-text">
+                  <p>В архитектурном проектировании современных пространств качество исполнения играет ключевую роль.
+                    Наша строительная компания КЛЕВЕР development готова предложить свои услуги для того, чтобы
+                    реализовать ваши идеи с высоким качеством и в срок. Стройте с нами — создавайте будущее!</p>
+                </div>
+              </div>
+              <div class="author-box repair-box">
+                <div class="repair-box__img"><img src="img/construction-img1.jpg" alt=""></div>
+                <div class="repair-box__text">
+                  <h3>Безопасность
+                    и качество</h3>
+                  <div class="box-text">
+                    <p>— главные принципы нашей работы. Мы придерживаемся всех строительных норм и правил</p>
+                  </div>
+                </div>
+              </div>
+              <div class="author-box repair-box">
+                <div class="repair-box__img"><img src="img/construction-img2.jpg" alt=""></div>
+                <div class="repair-box__text">
+                  <h3>Детально
+                    изучаем участок</h3>
+                  <div class="box-text">
+                    <p>Мы не просто строим дом, но и тщательно подходим к выбору участка, чтобы вы могли избежать
+                      непредвиденных затруднений</p>
+                  </div>
+                </div>
+              </div>
+              <div class="author-box repair-box">
+                <div class="repair-box__img"><img src="img/construction-img3.jpg" alt=""></div>
+                <div class="repair-box__text">
+                  <h3>Соблюдение стандартов</h3>
+                  <div class="box-text">
+                    <p>работа выполняется в соответствии
+                      с действующими стандартами
+                      и нормами, что гарантирует безопасность жилых и коммерческих зданий</p>
+                  </div>
+                </div>
+              </div>
+              <div class="author-box repair-box">
+                <div class="repair-box__img"><img src="img/construction-img4.jpg" alt=""></div>
+                <div class="repair-box__text">
+                  <h3>Контроль
+                    качества</h3>
+                  <div class="box-text">
+                    <p>в процессе строительства осуществляется строгий контроль за качеством всех материалов и
+                      выполненных работ</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
+
+  <section class="author repair bg-light-gray section-hidden" id="repair">
+    <div class="container container-decor container-decor-dark">
+      <div class="row">
+        <div class="col-12">
+          <div class="author-wrapper content-decor-line">
+            <div class="author-box-column">
+              <div class="author-box author-box-title">
+                <h2 class="title-decor">Ремонт</h2>
+                <div class="box-text">
+                  <p>Мы предлагаем полный спектр услуг: от разработки дизайн-проекта до выполнения строительных и
+                    отделочных работ:</p>
+                </div>
+              </div>
+              <div class="author-box repair-step">
+                <div class="repair-step__number">01</div>
+                <div class="repair-step__text">
+                  <div class="box-text">
+                    <p>Демонтаж конструкций</p>
+                    <span>(при необходимости)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="author-box repair-step">
+                <div class="repair-step__number">02</div>
+                <div class="repair-step__text">
+                  <div class="box-text">
+                    <p>Перепланировка помещений</p>
+                    <span>(при необходимости)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="author-box repair-step">
+                <div class="repair-step__number">03</div>
+                <div class="repair-step__text">
+                  <div class="box-text">
+                    <p>Электромонтажные
+                      и сантехнические работы</p>
+                  </div>
+                </div>
+              </div>
+              <div class="author-box repair-step">
+                <div class="repair-step__number">04</div>
+                <div class="repair-step__text">
+                  <div class="box-text">
+                    <p>Отделка стен, полов
+                      и потолков</p>
+                  </div>
+                </div>
+              </div>
+              <div class="author-box repair-step">
+                <div class="repair-step__number">05</div>
+                <div class="repair-step__text">
+                  <div class="box-text">
+                    <p>Монтаж систем отопления
+                      и кондиционирования</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="author-box-column">
+              <div class="author-box repair-box">
+                <div class="repair-box__img"><img src="img/report-img1.jpg" alt=""></div>
+                <div class="repair-box__text">
+                  <h3>Качество и надежность материалов</h3>
+                  <div class="box-text">
+                    <p>Используемые материалы
+                      проходят строгий контроль качества и соответствуют современным стандартам</p>
+                  </div>
+                </div>
+              </div>
+              <div class="author-box repair-box">
+                <div class="repair-box__img"><img src="img/report-img2.jpg" alt=""></div>
+                <div class="repair-box__text">
+                  <h3>Профессиональная команда</h3>
+                  <div class="box-text">
+                    <p>Наша команда состоит
+                      из архитекторов, дизайнеров, строителей и отделочников, которые обладают большим опытом работы
+                      и страстью к своему делу</p>
+                  </div>
+                </div>
+              </div>
+              <div class="author-box repair-box">
+                <div class="repair-box__img"><img src="img/report-img3.jpg" alt=""></div>
+                <div class="repair-box__text">
+                  <h3>Прозрачность
+                    и открытость</h3>
+                  <div class="box-text">
+                    <p>Ценим доверие наших клиентов, поэтому на каждом этапе работ предоставляем полную информацию о
+                      процессе, сроках и стоимости ремонта</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="author section-hidden" id="author">
+    <div class="container container-decor container-decor-dark">
+      <div class="row">
+        <div class="col-12">
+          <div class="author-wrapper content-decor-line">
+            <div class="author-box-column">
+              <div class="author-box author-box-title">
+                <h2 class="title-decor">Авторский надзор</h2>
+              </div>
+            </div>
+
+            <div class="author-box-column">
+              <div class="author-box author-box-text">
+                <div class="box-text">
+                  <p>Сопровождаем на каждом этапе реализации проекта, обеспечивая следование дизайнерским решениям и
+                    высоким
+                    стандартам качества. Архитектор не только создает проект, но и управляет строительным процессом. Он
+                    контролирует выполнение работ согласно проектным требованиям, учитывая возможные изменения и при
+                    необходимости вносит коррективы , берет на себя взаимодействие с подрядчиками и поставщиками</p>
+
+
+                  <p>По окончании строительства архитектор проводит финальную проверку, чтобы убедиться, что дом
+                    соответствует всем проектным требованиям. Кроме того, важно организовать оформление интерьеров и
+                    ландшафтного дизайна, чтобы завершить общую концепцию.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="section-hidden" id="contacts">
+    <div class="container container-decor">
+      <div class="row">
+        <div class="col-12">
+          <div class="footer-wrapper content-decor-line">
+            <div class="footer-box footer-box-company">
+              <a href="index.html" class="logo">
+                <img src="img/logo-footer.svg" alt="">
+              </a>
+              <div class="name-company">Студия архитектуры
+                и дизайна</div>
+            </div>
+            <div class="footer-box footer-box-contacts">
+              <ul class="list-social my-ul">
+                <li><a href="#" target="_blank" class="list-social__link"><svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#tg"></use>
+                    </svg></a></li>
+                <li><a href="#" target="_blank" class="list-social__link fill-none"><svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li><a href="#" target="_blank" class="list-social__link fill-none"><svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#whatsapp"></use>
+                    </svg></a></li>
+              </ul>
+              <a href="tel:+78412505105" class="phone">
+                <span class="color-accent">8-(8412)-</span>505-105
+              </a>
+              <a href="mailto:info@kleverdg.ru" class="mail link">info@kleverdg.ru</a>
+              <div class="address">г. Пенза, Калинина 80Б, 1 этаж</div>
+            </div>
+            <div class="footer-box footer-box-map">
+              <div class="map">
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=45.011049%2C53.171552&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NzIxMDY0ORI70KDQvtGB0YHQuNGPLCDQn9C10L3Qt9CwLCDRg9C70LjRhtCwINCa0LDQu9C40L3QuNC90LAsIDgw0JEiCg1QCzRCFayvVEI%2C&z=16.88"
+                  style="position:relative;"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#" target="_blank" class="link-developer">
+      <span>Разработано</span>
+      <img src="img/logo-developer.svg" alt="">
+    </a>
   </footer>
 
   <!-- add plugins js-->

@@ -46,7 +46,6 @@ body
   background: #fff
   color: $dark
 
-
 img
   display: block
   max-width: 100%
@@ -73,17 +72,19 @@ input, textarea, select
   box-sizing: border-box
   font-family: $default-font
   border: 1px solid #7a7a7a
-  border-bottom-color: $white
   border-radius: 0
   width: 100%
   height: 52px
   background: transparent
-  color: $white
+  color: $dark
   font-size: 20px
   line-height: normal
   cursor: pointer
+  position: relative
+  z-index: 1
+
   &::placeholder
-    color: #595959
+    color: $white
 
   &:hover, &:focus
     outline: none
@@ -103,6 +104,29 @@ label
 
   &:last-child
     margin: 0
+
+.form
+  label
+    position: relative
+    // z-index: 1
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      bottom: 0
+      width: 100%
+      height: 1px
+      background: $white
+      transition: .3s ease
+    &:hover
+      &::before
+        height: 100%
+      input
+        color: $dark
+        &::placeholder
+          color: $dark
+  [type='submit']
+    margin: 24px 0 0
 
 textarea
   resize: none
@@ -129,12 +153,58 @@ button, .btn
   align-items: center
   justify-content: center
   text-align: center
-  padding: 10px 45px
-  font-size: 16px
-  font-weight: bold
-  height: 46px
-  border-radius: 10px
+  padding: 16px 32px
+  font-size: 18px
+  font-family: $geologica-font
+  font-weight: light
+  text-transform: uppercase
+  height: 52px
+  border-radius: 0
   transition: 0.3s ease
+  position: relative
+  z-index: 1
+  .svg-icon
+    position: absolute
+    z-index: -1
+    right: -25px
+    top: -17px
+    width: 38px
+    height: 21px
+    transform: rotate(45deg)
+    @include d-flex
+  &::before
+    content: ''
+    position: absolute
+    z-index: -1
+    right: -18px
+    top: -20px
+    width: 39px
+    height: 44px
+    transform: rotate(45deg)
+    background: url('../img/arrow-btn.svg') no-repeat center
+    background-size: 100%
+
+.btn-white
+  background: $white
+  color: $dark
+  .svg-icon
+    stroke: $white
+  &:hover
+    background: $accent
+    color: $dark
+    .svg-icon
+      stroke: $accent
+  &:focus
+    background: $white
+    color: $dark
+    .svg-icon
+      stroke: $white
+  &.disabled, &:disabled
+    background: $white
+    color: $dark
+    opacity: 0.5
+    .svg-icon
+      stroke: $white
 
 .btn-burger, .btn-close
   @include d-flex
@@ -144,15 +214,16 @@ button, .btn
   border: 1px solid $white
   fill: $white
   svg
-    width: 19px
+    width: 20px
+    height: 14px
   &:hover
     background: $accent
-    border-color: $accent 
-    fill: $white 
+    border-color: $accent
+    fill: $white
   &:focus
     background: $dark
-    border-color: $dark 
-    fill: $white   
+    border-color: $dark
+    fill: $white
 
 .svg-icon
   display: inline-block
@@ -194,14 +265,13 @@ h1
     position: absolute
     left: 50%
     transform: translate(-50%,0)
-    background: $white-30  
+    background: $white-30
     width: 2000px
     height: 1px
   &::before
-    top: 0
+    top: 13px
   &:after
-    bottom: 0  
-    
+    bottom: 13px
 
 h2, .h2
   width: 100%
@@ -212,6 +282,8 @@ h2, .h2
   line-height: normal
   letter-spacing: 2%
   margin: 0
+  sup
+    font-size: 24px
 
 h3, .h3
   width: 100%
@@ -222,6 +294,19 @@ h3, .h3
   line-height: normal
   letter-spacing: 2%
   margin: 0
+
+.title-decor
+  position: relative
+  z-index: 1
+  padding: 0 0 30px
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 120px
+    height: 6px
+    background: $accent
 
 .box-text
   p
@@ -240,19 +325,22 @@ h3, .h3
 .color-accent
   color: $accent
 
-a.color-accent  
+a.color-accent
   &:hover
     color: $accent
-    text-decoration: none  
+    text-decoration: none
 
 .bg-light-gray
-  background: $light-gray    
+  background: $light-gray
 
 .container
   max-width: 1537px
   padding: 0 24px
+
+.container-decor
   position: relative
   z-index: 1
+  padding: 120px 24px
   &::before, &:after
     content: ''
     position: absolute
@@ -265,13 +353,85 @@ a.color-accent
   &:before
     left: 24px
 
+.container-decor-dark
+  &::before, &:after
+    background: $dark-20
+
 .row
   margin: 0 -24px
   >*
-    padding: 0 24px    
+    padding: 0 24px
 
 .p-120
   padding: 120px 0
+
+.mb-48
+  margin-bottom: 48px
+
+.content-decor-line
+  position: relative
+  z-index: 1
+  &::before, &:after
+    content: ''
+    position: absolute
+    left: 50%
+    transform: translate(-50%,0)
+    background: $dark-20
+    width: 2000px
+    height: 1px
+  &::before
+    top: 0
+  &:after
+    bottom: 0
+
+.section-hidden
+  overflow: hidden
+
+.nav-tabs
+  width: 100%
+  .nav-item
+    width: 100%
+  .nav-link
+    width: 100%
+    border: none
+    border-bottom: 1px solid $dark-20
+    border-radius: 0
+    text-align: left
+    text-transform: uppercase
+    font-family: $title-font
+    font-size: 24px
+    display: flex
+    align-items: center
+    padding: 9px 10px 9px 48px
+    min-height: 126px
+    color: $dark
+    .svg-icon
+      width: 70px
+      height: 83px
+      min-width: 70px
+      transform: rotate(-45deg)
+      stroke: $dark
+      transition: .3s ease
+      margin-left: auto
+    &:hover
+      background: $accent
+      color: $dark
+      .svg-icon
+        stroke: $dark
+        transform: none
+    &.active
+      background: $dark
+      color: $white
+      .svg-icon
+        stroke: $white
+        transform: none
+
+.tab-content
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
 
 // slick slider
 .slick-slider
@@ -279,6 +439,47 @@ a.color-accent
 
 .slick-slide
   outline: none
+
+.slick-arrow
+  position: absolute
+  z-index: 1
+  opacity: 1
+  @include d-flex
+  border-radius: 0
+  width: 52px
+  height: 52px
+  border: 1px solid $white-30
+  padding: 14px
+  stroke: $white
+  background: rgba(#21211F, .4)
+  bottom: 24px
+  &:hover, &:focus
+    background: $accent
+
+.slick-prev
+  left: 24px
+
+.slick-next
+  right: 24px
+
+.slick-arrow-dark
+  background: transparent
+  border-color: $dark
+  stroke: $dark
+
+.slider-nav
+  display: flex
+  align-items: center
+  .slick-arrow
+    position: relative
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
+    margin: 0 24px 0 0
+
+    &:last-child
+      margin: 0
 
 //checkbox my
 .label-checkbox
